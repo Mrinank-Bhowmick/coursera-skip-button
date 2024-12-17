@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Skip 2 Min Button for Coursera",
+  "version": "1.0",
+  "description": "Add a Skip 2 Min button to Coursera video settings.",
+  "permissions": ["activeTab", "scripting"],
+  "content_scripts": [
+    {
+      "matches": ["https://www.coursera.org/learn/*"],
+      "js": ["content.js"],
+      "css": ["style.css"]
+    }
+  ]
+}
